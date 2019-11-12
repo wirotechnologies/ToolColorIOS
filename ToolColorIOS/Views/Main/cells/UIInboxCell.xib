@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MyriadPro-Light.otf">
+            <string>MyriadPro-Light</string>
+        </array>
+        <array key="MyriadPro_LightItalic.otf">
+            <string>MyriadPro-LightIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="308" id="KGk-i7-Jjw" customClass="UIInboxCell" customModule="ToolColorIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="308"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="308"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwj-Us-sj1">
+                        <rect key="frame" x="-6" y="62" width="345" height="1"/>
+                        <color key="backgroundColor" red="0.86936265229999998" green="0.87002468109999997" blue="0.86946517229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cZO-qz-i13"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="imgUserDefault" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-Wb-yTa" customClass="MTImageView" customModule="HomeEscape" customModuleProvider="target">
+                        <rect key="frame" x="134" y="30" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="abK-e3-cjA"/>
+                            <constraint firstAttribute="height" constant="65" id="wm4-ZE-e2t"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="32.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-eU-Laj">
+                        <rect key="frame" x="27" y="8" width="278.5" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caroline Adams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lQ-qd-KoJ" customClass="MTLabel" customModule="HomeEscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="10" width="185" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="2dl-kc-ldL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="5wB-e1-oNp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15 oct 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVq-yq-bk7" customClass="MTLabel" customModule="HomeEscape" customModuleProvider="target">
+                                <rect key="frame" x="190" y="10" width="90" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Sze-oh-rez"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="cr3-oP-3y0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="e17-6f-QUN"/>
+                                    <constraint firstAttribute="height" constant="16" id="y0b-bh-Vga"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-LightIt" family="Myriad Pro" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3x-6t-gyB">
+                                <rect key="frame" x="0.0" y="32" width="280" height="18"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7h9-Ze-yj2">
+                                        <rect key="frame" x="0.0" y="2" width="20" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="LUt-0z-btk"/>
+                                            <constraint firstAttribute="width" constant="20" id="f0Q-Jb-4Ce"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ETb-Ac-wST">
+                                        <rect key="frame" x="25" y="0.0" width="103" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQJ-7w-oc6" customClass="MTLabel" customModule="HomeEscape" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="2" width="57" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb7-wy-hoX">
+                                                <rect key="frame" x="59" y="0.0" width="7.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOc-xW-v3h">
+                                                <rect key="frame" x="68.5" y="2" width="34.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ETb-Ac-wST" firstAttribute="top" secondItem="s3x-6t-gyB" secondAttribute="top" id="3dU-te-99M"/>
+                                    <constraint firstAttribute="height" constant="18" id="9Xl-IM-pFD"/>
+                                    <constraint firstItem="7h9-Ze-yj2" firstAttribute="top" secondItem="s3x-6t-gyB" secondAttribute="top" constant="2" id="dVi-jm-xAZ"/>
+                                    <constraint firstItem="7h9-Ze-yj2" firstAttribute="leading" secondItem="s3x-6t-gyB" secondAttribute="leading" id="v0g-jS-oIM"/>
+                                    <constraint firstItem="ETb-Ac-wST" firstAttribute="leading" secondItem="7h9-Ze-yj2" secondAttribute="trailing" constant="5" id="xVj-aN-bAt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWU-eP-pyD" customClass="MTLabel" customModule="HomeEscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55" width="280" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Ytx-dX-fvL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5h-cQ-bQs" customClass="MTLabel" customModule="HomeEscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="280" height="20"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A5h-cQ-bQs" firstAttribute="leading" secondItem="UoQ-eU-Laj" secondAttribute="leading" id="0C3-Te-1ft"/>
+                            <constraint firstAttribute="trailing" secondItem="xVq-yq-bk7" secondAttribute="trailing" id="3nr-v1-xDW"/>
+                            <constraint firstAttribute="trailing" secondItem="s3x-6t-gyB" secondAttribute="trailing" id="9lR-GV-QHg"/>
+                            <constraint firstItem="xVq-yq-bk7" firstAttribute="top" secondItem="UoQ-eU-Laj" secondAttribute="top" constant="10" id="Aed-mn-hm8"/>
+                            <constraint firstItem="HWU-eP-pyD" firstAttribute="leading" secondItem="UoQ-eU-Laj" secondAttribute="leading" id="Cx4-3a-VDc"/>
+                            <constraint firstItem="A5h-cQ-bQs" firstAttribute="top" secondItem="HWU-eP-pyD" secondAttribute="bottom" constant="5" id="F6e-Lg-3Fs"/>
+                            <constraint firstAttribute="trailing" secondItem="HWU-eP-pyD" secondAttribute="trailing" id="GVz-Dz-Vod"/>
+                            <constraint firstItem="xVq-yq-bk7" firstAttribute="leading" secondItem="3lQ-qd-KoJ" secondAttribute="trailing" constant="5" id="HC4-eq-a1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="A5h-cQ-bQs" secondAttribute="trailing" id="K8a-A4-9dn"/>
+                            <constraint firstItem="3lQ-qd-KoJ" firstAttribute="leading" secondItem="UoQ-eU-Laj" secondAttribute="leading" id="RxN-kr-WKe"/>
+                            <constraint firstItem="3lQ-qd-KoJ" firstAttribute="top" secondItem="UoQ-eU-Laj" secondAttribute="top" constant="10" id="Xu0-Jo-kl8"/>
+                            <constraint firstItem="s3x-6t-gyB" firstAttribute="leading" secondItem="UoQ-eU-Laj" secondAttribute="leading" id="a3S-qn-K3x"/>
+                            <constraint firstItem="xVq-yq-bk7" firstAttribute="leading" secondItem="3lQ-qd-KoJ" secondAttribute="trailing" constant="5" id="coI-TV-Z1K"/>
+                            <constraint firstItem="s3x-6t-gyB" firstAttribute="top" secondItem="3lQ-qd-KoJ" secondAttribute="bottom" constant="5" id="e0j-La-FDg"/>
+                            <constraint firstItem="HWU-eP-pyD" firstAttribute="top" secondItem="s3x-6t-gyB" secondAttribute="bottom" constant="5" id="lY9-M7-9Cb"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-3k-Rpj">
+                        <rect key="frame" x="132" y="28" width="68" height="68"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="36d-0Q-bJd">
+                                <rect key="frame" x="26" y="26" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="KO0-fl-EIR"/>
+                            <constraint firstAttribute="width" constant="68" id="XMW-O8-K9Y"/>
+                            <constraint firstItem="36d-0Q-bJd" firstAttribute="centerY" secondItem="QMF-3k-Rpj" secondAttribute="centerY" constant="2" id="ayB-Vh-mYx"/>
+                            <constraint firstItem="36d-0Q-bJd" firstAttribute="centerX" secondItem="QMF-3k-Rpj" secondAttribute="centerX" constant="2" id="cTR-yN-tH6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="34"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UoQ-eU-Laj" firstAttribute="leading" secondItem="QMF-3k-Rpj" secondAttribute="trailing" constant="7" id="UvV-i1-nfA"/>
+                    <constraint firstItem="lwj-Us-sj1" firstAttribute="top" secondItem="UoQ-eU-Laj" secondAttribute="bottom" constant="10" id="XTh-SW-8bS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="194.20289855072465" y="93.080357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imgUserDefault" width="16" height="16"/>
+        <image name="message-icon" width="16" height="16"/>
+    </resources>
+</document>
