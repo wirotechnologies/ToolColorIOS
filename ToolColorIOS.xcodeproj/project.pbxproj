@@ -15,8 +15,9 @@
 		AC4CFE4A237B4DA700B8BBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4CFE48237B4DA700B8BBC6 /* LaunchScreen.storyboard */; };
 		AC4CFE55237B4DA700B8BBC6 /* ToolColorIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CFE54237B4DA700B8BBC6 /* ToolColorIOSTests.swift */; };
 		AC4CFE60237B4DA700B8BBC6 /* ToolColorIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CFE5F237B4DA700B8BBC6 /* ToolColorIOSUITests.swift */; };
-		AC4CFE72237B4F9400B8BBC6 /* OwnerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CFE70237B4F9400B8BBC6 /* OwnerTableCell.swift */; };
-		AC4CFE73237B4F9400B8BBC6 /* UIInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4CFE71237B4F9400B8BBC6 /* UIInboxCell.xib */; };
+		AC7FFBB7237DA37F00862812 /* demoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FFBB5237DA37F00862812 /* demoCell.swift */; };
+		AC7FFBB8237DA37F00862812 /* demoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7FFBB6237DA37F00862812 /* demoCell.xib */; };
+		AC7FFBBB237DA7AC00862812 /* circularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FFBBA237DA7AC00862812 /* circularImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		AC4CFE5B237B4DA700B8BBC6 /* ToolColorIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolColorIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4CFE5F237B4DA700B8BBC6 /* ToolColorIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolColorIOSUITests.swift; sourceTree = "<group>"; };
 		AC4CFE61237B4DA700B8BBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC4CFE70237B4F9400B8BBC6 /* OwnerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerTableCell.swift; sourceTree = "<group>"; };
-		AC4CFE71237B4F9400B8BBC6 /* UIInboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIInboxCell.xib; sourceTree = "<group>"; };
+		AC7FFBB5237DA37F00862812 /* demoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoCell.swift; sourceTree = "<group>"; };
+		AC7FFBB6237DA37F00862812 /* demoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demoCell.xib; sourceTree = "<group>"; };
+		AC7FFBBA237DA7AC00862812 /* circularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circularImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		AC4CFE6E237B4F5600B8BBC6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AC7FFBB9237DA4EC00862812 /* Style */,
 				AC4CFE6F237B4F6600B8BBC6 /* cells */,
 				AC4CFE41237B4DA300B8BBC6 /* ViewController.swift */,
 			);
@@ -152,10 +155,18 @@
 		AC4CFE6F237B4F6600B8BBC6 /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				AC4CFE70237B4F9400B8BBC6 /* OwnerTableCell.swift */,
-				AC4CFE71237B4F9400B8BBC6 /* UIInboxCell.xib */,
+				AC7FFBB5237DA37F00862812 /* demoCell.swift */,
+				AC7FFBB6237DA37F00862812 /* demoCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		AC7FFBB9237DA4EC00862812 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				AC7FFBBA237DA7AC00862812 /* circularImageView.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +275,7 @@
 			files = (
 				AC4CFE4A237B4DA700B8BBC6 /* LaunchScreen.storyboard in Resources */,
 				AC4CFE47237B4DA700B8BBC6 /* Assets.xcassets in Resources */,
-				AC4CFE73237B4F9400B8BBC6 /* UIInboxCell.xib in Resources */,
+				AC7FFBB8237DA37F00862812 /* demoCell.xib in Resources */,
 				AC4CFE45237B4DA300B8BBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +303,8 @@
 			files = (
 				AC4CFE42237B4DA300B8BBC6 /* ViewController.swift in Sources */,
 				AC4CFE3E237B4DA300B8BBC6 /* AppDelegate.swift in Sources */,
-				AC4CFE72237B4F9400B8BBC6 /* OwnerTableCell.swift in Sources */,
+				AC7FFBBB237DA7AC00862812 /* circularImageView.swift in Sources */,
+				AC7FFBB7237DA37F00862812 /* demoCell.swift in Sources */,
 				AC4CFE40237B4DA300B8BBC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

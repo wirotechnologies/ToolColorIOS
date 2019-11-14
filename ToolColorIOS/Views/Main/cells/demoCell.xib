@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MyriadPro-Light.otf">
+            <string>MyriadPro-Light</string>
+        </array>
+        <array key="MyriadPro_LightItalic.otf">
+            <string>MyriadPro-LightIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="_demoCell" id="KGk-i7-Jjw" customClass="demoCell" customModule="ToolColorIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-wA-sFu" customClass="circularImageView" customModule="ToolColorIOS" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="ErS-xr-Z05"/>
+                            <constraint firstAttribute="height" constant="65" id="Sc3-hQ-DMe"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYc-sx-6lb">
+                        <rect key="frame" x="85" y="10" width="332" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caroline Adams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkh-zI-HJW" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="10" width="237" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="7Yh-yH-ouH"/>
+                                    <constraint firstAttribute="height" constant="17" id="ftH-dH-aFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15 oct 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKG-OM-PiA" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                <rect key="frame" x="242" y="10" width="90" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2Wg-15-hBa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Oka-qZ-frx"/>
+                                    <constraint firstAttribute="width" constant="90" id="mQD-Uh-fGv"/>
+                                    <constraint firstAttribute="height" constant="16" id="oyd-qf-Vy1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-LightIt" family="Myriad Pro" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MO9-4y-Yis">
+                                <rect key="frame" x="0.0" y="32" width="332" height="18"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_email_btn" translatesAutoresizingMaskIntoConstraints="NO" id="6Eh-JK-Kkr">
+                                        <rect key="frame" x="0.0" y="2" width="20" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="MlE-J5-wSE"/>
+                                            <constraint firstAttribute="width" constant="20" id="QOO-CH-M9t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-o6-lkv">
+                                        <rect key="frame" x="25" y="0.0" width="103" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-8N-syc" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="2" width="57" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhu-A0-lde">
+                                                <rect key="frame" x="59" y="0.0" width="7.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YV-eY-XFR">
+                                                <rect key="frame" x="68.5" y="2" width="34.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6X7-o6-lkv" firstAttribute="top" secondItem="MO9-4y-Yis" secondAttribute="top" id="1ha-YK-XVI"/>
+                                    <constraint firstItem="6Eh-JK-Kkr" firstAttribute="leading" secondItem="MO9-4y-Yis" secondAttribute="leading" id="6bQ-3z-2tY"/>
+                                    <constraint firstItem="6Eh-JK-Kkr" firstAttribute="top" secondItem="MO9-4y-Yis" secondAttribute="top" constant="2" id="YQZ-jr-fn8"/>
+                                    <constraint firstAttribute="height" constant="18" id="kVv-Gg-sPC"/>
+                                    <constraint firstItem="6X7-o6-lkv" firstAttribute="leading" secondItem="6Eh-JK-Kkr" secondAttribute="trailing" constant="5" id="qwz-YU-keN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-Qy-ZYx" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55" width="332" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="jjr-uk-ykt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-eQ-PHR" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="332" height="20"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YsM-Qy-ZYx" secondAttribute="trailing" id="3Pf-I6-zoT"/>
+                            <constraint firstItem="YsM-Qy-ZYx" firstAttribute="top" secondItem="MO9-4y-Yis" secondAttribute="bottom" constant="5" id="4Q5-Ln-2AS"/>
+                            <constraint firstAttribute="height" constant="109" id="B05-DN-IQb"/>
+                            <constraint firstAttribute="trailing" secondItem="uKG-OM-PiA" secondAttribute="trailing" id="Bwc-06-3qC"/>
+                            <constraint firstItem="uKG-OM-PiA" firstAttribute="top" secondItem="nYc-sx-6lb" secondAttribute="top" constant="10" id="LLq-ud-OnP"/>
+                            <constraint firstItem="57Z-eQ-PHR" firstAttribute="leading" secondItem="nYc-sx-6lb" secondAttribute="leading" id="UA6-Bm-Fav"/>
+                            <constraint firstItem="uKG-OM-PiA" firstAttribute="leading" secondItem="Hkh-zI-HJW" secondAttribute="trailing" constant="5" id="Z50-l0-mkv"/>
+                            <constraint firstItem="MO9-4y-Yis" firstAttribute="leading" secondItem="nYc-sx-6lb" secondAttribute="leading" id="cNL-UD-YA6"/>
+                            <constraint firstAttribute="trailing" secondItem="MO9-4y-Yis" secondAttribute="trailing" id="dE1-z3-heL"/>
+                            <constraint firstItem="uKG-OM-PiA" firstAttribute="leading" secondItem="Hkh-zI-HJW" secondAttribute="trailing" constant="5" id="dny-bP-sQw"/>
+                            <constraint firstItem="MO9-4y-Yis" firstAttribute="top" secondItem="Hkh-zI-HJW" secondAttribute="bottom" constant="5" id="eCv-vY-lQ0"/>
+                            <constraint firstAttribute="trailing" secondItem="57Z-eQ-PHR" secondAttribute="trailing" id="hHf-uy-eSA"/>
+                            <constraint firstItem="Hkh-zI-HJW" firstAttribute="leading" secondItem="nYc-sx-6lb" secondAttribute="leading" id="huF-g9-VMK"/>
+                            <constraint firstItem="Hkh-zI-HJW" firstAttribute="top" secondItem="nYc-sx-6lb" secondAttribute="top" constant="10" id="jQJ-B6-qDs"/>
+                            <constraint firstItem="YsM-Qy-ZYx" firstAttribute="leading" secondItem="nYc-sx-6lb" secondAttribute="leading" id="m3f-mK-d9x"/>
+                            <constraint firstItem="57Z-eQ-PHR" firstAttribute="top" secondItem="YsM-Qy-ZYx" secondAttribute="bottom" constant="5" id="wuB-3K-hAA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nYc-sx-6lb" secondAttribute="bottom" constant="10" id="2jg-Cf-8B2"/>
+                    <constraint firstItem="d5K-wA-sFu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="L8u-vt-aST"/>
+                    <constraint firstItem="nYc-sx-6lb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZjO-fv-577"/>
+                    <constraint firstItem="nYc-sx-6lb" firstAttribute="leading" secondItem="d5K-wA-sFu" secondAttribute="trailing" constant="10" id="b2g-DM-nXv"/>
+                    <constraint firstAttribute="trailing" secondItem="nYc-sx-6lb" secondAttribute="trailing" constant="10" id="se0-8L-bcg"/>
+                    <constraint firstItem="d5K-wA-sFu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ti0-Xk-k1Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="209.42028985507247" y="115.51339285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="demo_icon_user" width="84" height="84"/>
+        <image name="icon_email_btn" width="20" height="13"/>
+    </resources>
+</document>

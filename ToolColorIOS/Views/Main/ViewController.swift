@@ -8,22 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
+    @IBOutlet var tableOwner: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let ownerCell = UINib(nibName: "OwnerTableCell", bundle: nil)
-        table.register(ownerCell, forCellReuseIdentifier: "_OwnerTableCell")
+        let demoCell = UINib(nibName: "demoCell", bundle: nil)
+        tableOwner.register(demoCell, forCellReuseIdentifier: "_demoCell")
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableOwner.dequeueReusableCell(withIdentifier: "_demoCell") as? demoCell
+        return (cell!)
     }
 
 }
