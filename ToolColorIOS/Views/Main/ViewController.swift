@@ -8,35 +8,65 @@
 
 import UIKit
 
-protocol changeAlpha{
-    func readPlus()
-    func readLess()
-    func newPlus()
-    func newLess()
+struct DemoCellsData {
+    var clientNameLabel: String
+    var messageLabel: String
+    var messageTextLabel: String
+    var alpha:CGFloat
 }
 
 class ViewController: UIViewController{
 
     @IBOutlet var tableOwner: UITableView!
-    var delegateChangeAlpha:changeAlpha?
+    @IBOutlet var quantityNew: UILabel!
+    @IBOutlet var quantityRead: UILabel!
+    
+    var demoData=[DemoCellsData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initDemoData()
         let demoCell = UINib(nibName: "demoCell", bundle: nil)
         tableOwner.register(demoCell, forCellReuseIdentifier: "_demoCell")
     }
     
+    func initDemoData(){
+        demoData = [
+            DemoCellsData(clientNameLabel: "Caroline Adams", messageLabel: "Message", messageTextLabel: "Hello Mr John", alpha:1),
+            DemoCellsData(clientNameLabel: "Rodolf Nix", messageLabel: "Message", messageTextLabel: "Hello Mr John", alpha:1)
+        ]
+    }
+    
     @IBAction func newPlusAction(_ sender: Any) {
-        delegateChangeAlpha?.readPlus()
+        print("new plus")
+        alphaPlus(index:0)
+        quantityNew.text = "\(demoData[0].alpha)"
     }
     @IBAction func newLessAction(_ sender: Any) {
-        delegateChangeAlpha?.readLess()
+        print("new less")
+        alphaLess(index:0)
+        quantityNew.text = "\(demoData[0].alpha)"
     }
     @IBAction func readPlusAction(_ sender: Any) {
-        delegateChangeAlpha?.newPlus()
+        alphaPlus(index:1)
+        quantityRead.text = "\(demoData[1].alpha)"
     }
-    @IBAction func lessPlusAction(_ sender: Any) {
-        delegateChangeAlpha?.newLess()
+    @IBAction func readLessAction(_ sender: Any) {
+        alphaLess(index:1)
+        quantityRead.text = "\(demoData[1].alpha)"
+    }
+    
+    func alphaPlus(index:Int){
+        if demoData[index].alpha < 1 {
+            demoData[index].alpha = demoData[index].alpha + 0.1
+        }
+        tableOwner.reloadData()
+    }
+    func alphaLess(index:Int){
+        if demoData[index].alpha > 0 {
+            demoData[index].alpha = demoData[index].alpha - 0.1
+        }
+        tableOwner.reloadData()
     }
 
 }
@@ -51,9 +81,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableOwner.dequeueReusableCell(withIdentifier: "_demoCell") as? demoCell
-        delegateChangeAlpha = cell!
-        cell?.clientNameLabel.tag = (indexPath.row == 0) ? 0 : 1
-        cell?.indexCell = indexPath.row
+        cell?.renderData(demoData:demoData[indexPath.row])
         return (cell!)
     }
 }

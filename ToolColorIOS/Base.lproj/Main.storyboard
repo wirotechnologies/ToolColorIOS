@@ -88,7 +88,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="lessPlusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkb-B0-Oy2"/>
+                                                    <action selector="readLessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkb-B0-Oy2"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46l-cA-2s5">
@@ -123,6 +123,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="quantityNew" destination="wtn-gf-Km2" id="NEh-LC-KMv"/>
+                        <outlet property="quantityRead" destination="46l-cA-2s5" id="C9R-a9-ZNP"/>
                         <outlet property="tableOwner" destination="ke0-Iq-GiN" id="XG8-sT-LaE"/>
                     </connections>
                 </viewController>
