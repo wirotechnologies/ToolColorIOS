@@ -22,12 +22,18 @@ class ViewController: UIViewController{
     @IBOutlet var quantityRead: UILabel!
     
     var demoData=[DemoCellsData]()
+    var alphaRead = 1
+    var alphaNew = 1
+    var formatter = NumberFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setFormatter()
         initDemoData()
         let demoCell = UINib(nibName: "demoCell", bundle: nil)
         tableOwner.register(demoCell, forCellReuseIdentifier: "_demoCell")
+        quantityNew.text = "1"
+        quantityRead.text = "1"
     }
     
     func initDemoData(){
@@ -37,33 +43,52 @@ class ViewController: UIViewController{
         ]
     }
     
+    func setFormatter(){
+        formatter.maximumFractionDigits = 1
+        formatter.minimumFractionDigits = 1
+        formatter.numberStyle = .decimal
+    }
+    
     @IBAction func newPlusAction(_ sender: Any) {
         print("new plus")
         alphaPlus(index:0)
-        quantityNew.text = "\(demoData[0].alpha)"
+        let value = demoData[0].alpha
+        if let formattedString = formatter.string(for: value) {
+            quantityNew.text = formattedString
+        }
     }
     @IBAction func newLessAction(_ sender: Any) {
         print("new less")
         alphaLess(index:0)
-        quantityNew.text = "\(demoData[0].alpha)"
+        let value = demoData[0].alpha
+        if let formattedString = formatter.string(for: value) {
+            quantityNew.text = formattedString
+        }
     }
     @IBAction func readPlusAction(_ sender: Any) {
         alphaPlus(index:1)
-        quantityRead.text = "\(demoData[1].alpha)"
+        let value = demoData[1].alpha
+        if let formattedString = formatter.string(for: value) {
+            quantityRead.text = formattedString
+        }
     }
     @IBAction func readLessAction(_ sender: Any) {
         alphaLess(index:1)
-        quantityRead.text = "\(demoData[1].alpha)"
+        let value = demoData[1].alpha
+        if let formattedString = formatter.string(for: value) {
+            quantityRead.text = formattedString
+        }
     }
     
     func alphaPlus(index:Int){
-        if demoData[index].alpha < 1 {
+        
+        if demoData[index].alpha <= 0.9 {
             demoData[index].alpha = demoData[index].alpha + 0.1
         }
         tableOwner.reloadData()
     }
     func alphaLess(index:Int){
-        if demoData[index].alpha > 0 {
+        if demoData[index].alpha >= 0.1 {
             demoData[index].alpha = demoData[index].alpha - 0.1
         }
         tableOwner.reloadData()

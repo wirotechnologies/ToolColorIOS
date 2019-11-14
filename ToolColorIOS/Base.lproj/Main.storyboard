@@ -26,7 +26,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="rXf-wt-DVa"/>
                                 </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-c3-TiX">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-c3-TiX">
                                 <rect key="frame" x="20" y="280" width="160" height="79"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="UCV-dx-uCS" userLabel="New SV">
