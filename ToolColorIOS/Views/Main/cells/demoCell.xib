@@ -37,7 +37,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYc-sx-6lb">
                         <rect key="frame" x="85" y="10" width="332" height="109"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caroline Adams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkh-zI-HJW" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caroline Adams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkh-zI-HJW">
                                 <rect key="frame" x="0.0" y="10" width="237" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="7Yh-yH-ouH"/>
@@ -47,7 +47,7 @@
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15 oct 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKG-OM-PiA" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15 oct 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKG-OM-PiA">
                                 <rect key="frame" x="242" y="10" width="90" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2Wg-15-hBa"/>
@@ -72,7 +72,7 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-o6-lkv">
                                         <rect key="frame" x="25" y="0.0" width="103" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-8N-syc" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-8N-syc">
                                                 <rect key="frame" x="0.0" y="2" width="57" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,7 +102,7 @@
                                     <constraint firstItem="6X7-o6-lkv" firstAttribute="leading" secondItem="6Eh-JK-Kkr" secondAttribute="trailing" constant="5" id="qwz-YU-keN"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-Qy-ZYx" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-Qy-ZYx">
                                 <rect key="frame" x="0.0" y="55" width="332" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="jjr-uk-ykt"/>
@@ -111,7 +111,7 @@
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-eQ-PHR" customClass="MTLabel" customModule="ToolColorIOS" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami Amazing condo in the first line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-eQ-PHR">
                                 <rect key="frame" x="0.0" y="74" width="332" height="20"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
                                 <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,6 +149,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="clientNameLabel" destination="Hkh-zI-HJW" id="QrD-R6-2Hy"/>
+                <outlet property="dateMessageLabel" destination="7YV-eY-XFR" id="mho-q6-4Ea"/>
+                <outlet property="messageLabel" destination="OeX-8N-syc" id="cTD-qI-Ziu"/>
+                <outlet property="messageTextLabel" destination="57Z-eQ-PHR" id="dc3-V9-lVW"/>
+                <outlet property="secondaryText" destination="YsM-Qy-ZYx" id="AwK-MX-lmE"/>
+            </connections>
             <point key="canvasLocation" x="209.42028985507247" y="115.51339285714285"/>
         </tableViewCell>
     </objects>
